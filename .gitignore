@@ -1,0 +1,10 @@
+### Package
+# Build directories
+dist/
+tmp/
+
+### JetBrains
+.idea/
+
+### Node
+node_modules

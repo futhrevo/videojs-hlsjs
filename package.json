@@ -1,0 +1,55 @@
+{
+  "name": "@makotokw/videojs-hlsjs",
+  "version": "1.0.0-beta.1",
+  "description": "Playback HLS with hls.js that is lightweight and a source handler with HTML5 tech",
+  "main": "dist/videojs-hlsjs.js",
+  "scripts": {
+    "build": "grunt build",
+    "prepublish": "npm run build",
+    "lint": "grunt eslint",
+    "test": "npm run lint"
+  },
+  "keywords": [
+    "videojs",
+    "videojs-plugin",
+    "hls"
+  ],
+  "author": {
+    "name" : "Makoto Kawasaki",
+    "email" : "makoto.kw@gmail.com",
+    "url" : "https://makotokw.com/"
+  },
+  "license": "MIT",
+  "browserify-shim": {
+    "video.js": "global:videojs",
+    "hls.js": "global:Hls"
+  },
+  "files": [
+    "dist/",
+    "src/"
+  ],
+  "dependencies": {
+    "aes-decrypter": "^3.0.0",
+    "hls.js": "^0.9.1",
+    "video.js": "^6.8.0",
+    "videojs-contrib-quality-levels": "^2.0.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify-derequire": "^0.9.4",
+    "browserify-shim": "^3.8.14",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "grunt": "^1.0.2",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-browserify": "^5.3.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.0.1",
+    "grunt-eslint": "^20.1.0",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}
